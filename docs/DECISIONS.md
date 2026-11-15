@@ -14,12 +14,12 @@
 | D-005 | 2026-11-12 | The name is CoachSpace. Interface in English by default, Spanish selectable. New visual identity; visual references Nike, Strava, TeamPlus. Dark mode is not a priority. | Keep the demo's identity | Owner's preference. |
 | D-006 | 2026-11-12 | Native app and web. Target: a beta in February 2027. Design is worked out with the owner before screens are built. | Web first | Competitors live on the phone; the owner prefers waiting for a native app. |
 | D-007 | 2026-11-15 | Development starts: one Expo (React Native, TypeScript) code base for iOS, Android and web. | Separate Next.js web app; wrapped web app; Swift and Kotlin | One code base for one person to maintain. The owner gave the go-ahead to start after this was recommended; Supabase as backend is recommended but not yet set up (see O-002). |
+| D-008 | 2026-11-15 | Team chat is in the first version (level 1). | Leave chat out and rely on WhatsApp (the assistant's recommendation) | Owner's decision: the reference product has it. Cost accepted: chat is one of the more expensive parts to build well. |
 
 ## 2. Open
 
 | # | Question | Recommendation |
 |---|---|---|
-| O-001 | Is chat in the first version? | No: costly to do well, and teams already use WhatsApp. |
 | O-002 | Backend: Supabase in an EU region? | Yes; confirm when the free plan's current limits have been checked. |
 | O-003 | Ads in the future? | No while minors use the app; revisit with legal advice. |
 | O-004 | Plans and prices (coach plan, club plan) | Decide after the beta, with real usage. |

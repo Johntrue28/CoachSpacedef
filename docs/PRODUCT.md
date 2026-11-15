@@ -43,7 +43,8 @@ Summarised from `RESEARCH.md`. Small sample: four clubs replied to 46 emails.
 - **Lowest possible friction to join and answer.** Joining by link; signing in without a password.
 - **Few things, easy to find.** Nothing hidden: a complaint about the old demo was that functions were hard to find.
 - **The event is the centre.** Who is coming, the squad, lifts and tasks all live in the event.
-- **Works next to WhatsApp**, not against it.
+- **Works next to WhatsApp**, not against it. The app has its own team chat, but nothing depends on a team
+  moving its conversations there.
 - **No ads in the first version.** Ads with minors in the app are a legal and trust risk (open for later).
 
 ## 4. Scope of the first version (levels 1 and 2, approved by the owner)
@@ -58,6 +59,7 @@ Summarised from `RESEARCH.md`. Small sample: four clubs replied to 46 emails.
 | Reminders | Push notifications for new events, changes and unanswered invitations |
 | Attendance | Register pre-filled from the answers; the coach corrects it |
 | Announcements | One-way posts from coaches to the team |
+| Chat | Team chat (decided by the owner, D-008). Detail to be defined in M1 |
 | Documents | Files and links kept per team, always findable |
 
 ### Level 2 — Full team
@@ -76,8 +78,6 @@ Team kitty and fines, treasurer role, club panel across teams, calendar subscrip
 
 ### Open
 
-- **Chat.** Recommendation: leave it out of the first version (expensive to do well; teams already have
-  WhatsApp). The owner has not decided.
 - **Exercise library, training plans and videos** from the old demo: not in scope; the only feature a club
   explicitly rejected.
 
