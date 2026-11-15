@@ -1,8 +1,8 @@
 # CoachSpace — Design
 
 > The visual direction, the rules that keep the app from looking generic, and the interaction mechanics.
-> Status: direction chosen by the owner (D-009); the design system and screens are being built in Penpot.
-> The Penpot file is the source for exact values; this document holds the rules.
+> Status: direction chosen (D-009), typeface and mechanics decided (D-023 to D-025). Navigation and screens are
+> in `UX_SPECIFICATION.md`. The Penpot file is the source for exact values; `src/theme/tokens.ts` mirrors it.
 
 ## 1. Direction: "Matchday"
 
@@ -11,7 +11,7 @@ Chosen from three explorations (page "Directions" in the Penpot file). Reference
 | Element | Rule |
 |---|---|
 | Colour | Black, white and **one** accent (signal orange `#FF4B14` in the exploration). Greys only as neutrals. No gradients. |
-| Type | Display: Barlow Condensed, heavy, uppercase, tight — for titles, times and numbers only. Text: Inter. Two families, no more. |
+| Type | Display: Barlow Condensed, heavy, uppercase, tight — for titles, times and numbers only. Text: Inter Tight (D-025). Two families, no more. |
 | Shape | **Square corners.** Little or no rounding on buttons, cards and avatars (owner's request). |
 | Layout | Full-bleed blocks instead of floating cards. Hierarchy from size and contrast, not from boxes and shadows. |
 | Numbers | The number the person came for (the time, how many are in) is the biggest thing on the screen. |
@@ -53,7 +53,7 @@ Collected from practitioner write-ups (opinion, not hard evidence; sources at th
 | Generic tell | Our rule |
 |---|---|
 | Default purple/indigo accent, lavender tints | One deliberate accent chosen for the brand |
-| Inter (or one default font) everywhere | A display face with character, used sparingly |
+| One default font everywhere | A display face with character, used sparingly |
 | Rounded corners on everything, card inside card | Square corners; blocks and dividers, few cards |
 | Gradients, glass effects, soft shadows as decoration | Flat colour; no shadows unless something really floats |
 | Loose letter-spacing on headings | Tight tracking on large type |
@@ -64,44 +64,39 @@ Collected from practitioner write-ups (opinion, not hard evidence; sources at th
 Working method that follows: a written system (spacing grid, two fonts, one accent) before screens; real
 content in every design; design each state (empty, loading, error), not only the full one.
 
-## 4. Interaction mechanics (proposed; each needs the owner's approval before it is built)
+## 4. Interaction mechanics
 
-| Mechanic | Where | Why |
-|---|---|---|
-| **Slide to answer** | Player's event screen | Answering is the core action; a physical gesture with a clear end state is faster and more satisfying than two small buttons |
-| **Haptic feedback** | On answering, on sending a reminder, on errors | Confirms the action without reading |
-| **Live countdown** | Next event | Makes the screen feel current |
-| **Numbers that count up** | Answer totals, attendance | Draws the eye to what changed |
-| **Swipe on a row** | Event and member lists | Quick actions without opening a screen |
-| **Bottom sheets** | Absence reason, quick create | Keeps the person in context |
-| **Pull to refresh, skeleton loading** | Lists | Expected in a modern app; no blank screens |
+| Mechanic | Where | Why | Status |
+|---|---|---|---|
+| **Slide to answer** | Player's event screen | Answering is the core action; a physical gesture with a clear end state is faster and more satisfying than two small buttons | Decided (D-023), with a button alternative |
+| **Haptic feedback** | On answering, on sending a reminder, on errors | Confirms the action without reading | In |
+| **Live countdown** | Next event | Makes the screen feel current | In |
+| **Numbers that count up** | Answer totals, attendance | Draws the eye to what changed | Optional polish, after the beta |
+| **Swipe on a row** | Event and member lists | Quick actions without opening a screen | Not in the first version: every action has a visible control |
+| **Bottom sheets** | Team switcher, confirmations | Keeps the person in context | In (team switcher, confirmations, short choices) |
+| **Pull to refresh, skeleton loading** | Lists | Expected in a modern app; no blank screens | Pull to refresh in; a spinner instead of skeletons in the first version |
 
-Not included: streaks (dropped by the owner, D-011), badges, points or leaderboards between children. Open question for the owner: how far to go
-with motivation features in an app used by minors.
+Not included: streaks (D-011), badges, points or leaderboards between children; a reason for absence (D-024).
 
-## 5. State of the Penpot file (built, awaiting the owner's review)
-
-Nothing here is approved yet. Screens are built in code only after the owner approves them.
+## 5. State of the Penpot file
 
 | Page | Contents |
 |---|---|
 | Directions | The three explorations and the first coach home |
 | Components | 23 Phosphor icons; `button` (primary, secondary, inverse); `tag` (solid, accent, outline); `avatar` (dark, light); `answer` (in, out, none); `event-row` (training, match); `member-row`; `tab-bar` (one variant per active tab); `top-bar` (light, dark) |
-| Screens | Phone, 390 x 844. Start: sign in, join team. Coach: home, home (empty), event, attendance, calendar, new event, team, chat, documents, notifications, more. Player: home, event (answer), event (answered), can't come (reason sheet) |
+| Screens | Phone, 390 x 844. Start: sign in, join team. Coach: home, home (empty), event, attendance, calendar, new event, team, chat, documents, notifications, more. Player: home, event (answer), event (answered), can't come (obsolete, D-024) |
 
 - **Tokens** (Tokens tab, sets `base` and `semantic`): colours, the spacing scale, radius 0, two font families and
-  eleven type styles. Every fill, gap, padding and text style in the new screens is bound to a token.
-- **Not designed yet:** loading and error states; long-name and long-list tests; tablet and desktop layouts;
-  focus states; announcements list; level 2 (squad and line-up, statistics, polls, lifts, tasks).
-- **Proposals drawn for review, not decided:** slide to answer (O-007); absence reason as a fixed list
-  (school or work, away, other) with no free text (O-009).
-- **Mismatch to resolve:** §1 says the text face is Inter; the Penpot file uses Inter Tight (O-008).
+  eleven type styles; every fill, gap, padding and text style in the screens is bound to a token.
+- The phone screens are the accepted base (D-012). New screens are composed from these components following
+  `UX_SPECIFICATION.md` (A-012); the Penpot updates that remain are listed in its §7.
+- **Not designed yet:** tablet and desktop layouts (later, D-027).
 
 ## 6. Resources (all free)
 
 | Need | Resource | Notes |
 |---|---|---|
-| Fonts | Barlow Condensed, Inter (Google Fonts, open licence) | Bundled in the app |
+| Fonts | Barlow Condensed, Inter Tight (Google Fonts, open licence) | Bundled in the app |
 | Icons | Phosphor Icons (MIT) | Has a React Native package |
 | Animation | React Native Reanimated | Already in the project |
 | Gestures | React Native Gesture Handler | Already in the project |
