@@ -16,6 +16,7 @@
 | D-007 | 2026-11-15 | Development starts: one Expo (React Native, TypeScript) code base for iOS, Android and web. | Separate Next.js web app; wrapped web app; Swift and Kotlin | One code base for one person to maintain. The owner gave the go-ahead to start after this was recommended; Supabase as backend is recommended but not yet set up (see O-002). |
 | D-008 | 2026-11-15 | Team chat is in the first version (level 1). | Leave chat out and rely on WhatsApp (the assistant's recommendation) | Owner's decision: the reference product has it. Cost accepted: chat is one of the more expensive parts to build well. |
 | D-009 | 2026-11-15 | Visual direction: "Matchday" (black, white, one accent; heavy condensed display type; square corners), with modern interaction mechanics in the spirit of Nike and Strava. Rules in `DESIGN.md`. | "Clubhouse" (warm, rounded); "Scoreboard" (blue, cards) | The owner found it the most developed and the least generic; he asked for little rounding. |
+| D-010 | 2026-11-15 | Design requirements for identity, typography, spacing, components, accessibility, navigation, data, responsive behaviour and quality, as listed in `DESIGN.md` §2. | — | Set by the owner as the standard every screen must meet. |
 
 ## 2. Open
 
@@ -25,5 +26,5 @@
 | O-003 | Ads in the future? | No while minors use the app; revisit with legal advice. |
 | O-004 | Plans and prices (coach plan, club plan) | Decide after the beta, with real usage. |
 | O-005 | Monthly budget and the store fees (Apple 99 $ per year, Google 25 $ once) | Needed before M6. |
-| O-007 | Which interaction mechanics from `DESIGN.md` §3 go in, and how far to take motivation features with minors | Slide to answer, haptics, countdown: yes. Team streak: yes. No badges or rankings between children. |
+| O-007 | Which interaction mechanics from `DESIGN.md` §4 go in, and how far to take motivation features with minors | Slide to answer, haptics, countdown: yes. Team streak: yes. No badges or rankings between children. |
 | O-006 | How guardians and children work in detail (who answers, from what age a child has an account) | Define in M1; design for a digital consent age of 16. |

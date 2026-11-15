@@ -20,7 +20,33 @@ Chosen from three explorations (page "Directions" in the Penpot file). Reference
 To verify before the system is final: colour contrast (WCAG AA) for every text/background pair, and that the
 accent is never the only signal of meaning.
 
-## 2. What makes an interface look generic, and what we do instead
+## 2. Design requirements (set by the owner, D-010)
+
+| Area | Requirement |
+|---|---|
+| Identity | Sporty, modern and functional; never a generic template. |
+| Typography | At most two type families; a consistent hierarchy; functional text stays legible. |
+| Spacing | A spacing system based on multiples of 4 and 8 px. |
+| Components | Buttons, cards, forms and lists follow shared rules. |
+| Accessibility | WCAG AA contrast where it applies, adequate touch targets, visible focus states. |
+| Navigation | No unnecessary sections; the main flows take few steps. |
+| Data | Priority to information that helps the coach decide or act. |
+| Responsive | Phone, tablet and desktop behaviours are designed separately. |
+| Quality | Test real screens with long data, empty states, errors and different sizes. |
+
+How they are applied:
+
+- **Spacing scale:** 4, 8, 12, 16, 20, 24, 32, 40, 48, 64. No other values.
+- **Touch targets:** at least 44 x 44 pt on iOS and 48 x 48 dp on Android, whatever the visual size.
+- **Contrast:** 4.5:1 for text, 3:1 for large text and for the parts of controls that carry meaning. Colour is
+  never the only signal: answers also carry a label or an icon.
+- **Focus:** every control has a visible focus state on web and with a keyboard.
+- **Breakpoints:** phone (under 600 px) uses a bottom tab bar and one column; tablet (600 to 1023 px) and
+  desktop (1024 px and up) get their own layouts, designed, not stretched.
+- **Every screen is designed in its states:** filled, empty, loading, error, and with long names and long lists.
+- **A screen earns its place** by helping someone decide or act; statistics with no decision attached stay out.
+
+## 3. What makes an interface look generic, and what we do instead
 
 Collected from practitioner write-ups (opinion, not hard evidence; sources at the end).
 
@@ -38,7 +64,7 @@ Collected from practitioner write-ups (opinion, not hard evidence; sources at th
 Working method that follows: a written system (spacing grid, two fonts, one accent) before screens; real
 content in every design; design each state (empty, loading, error), not only the full one.
 
-## 3. Interaction mechanics (proposed; each needs the owner's approval before it is built)
+## 4. Interaction mechanics (proposed; each needs the owner's approval before it is built)
 
 | Mechanic | Where | Why |
 |---|---|---|
@@ -54,7 +80,7 @@ content in every design; design each state (empty, loading, error), not only the
 Not proposed: badges, points or leaderboards between children. Open question for the owner: how far to go
 with motivation features in an app used by minors.
 
-## 4. Resources (all free)
+## 5. Resources (all free)
 
 | Need | Resource | Notes |
 |---|---|---|
@@ -68,7 +94,7 @@ with motivation features in an app used by minors.
 
 Versions and current APIs must be checked in the official documentation when each is added.
 
-## 5. Sources
+## 6. Sources
 
 - [7 signs a UI has been vibe coded (The Fountain Institute)](https://www.thefountaininstitute.com/blog/signs-vibe-coded-ui)
 - [How to de-slopify your designs (UX Collective)](https://uxdesign.cc/how-to-de-slopify-your-designs-4c40c57c1dc9)
