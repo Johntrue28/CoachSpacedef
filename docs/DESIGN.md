@@ -75,9 +75,8 @@ content in every design; design each state (empty, loading, error), not only the
 | **Swipe on a row** | Event and member lists | Quick actions without opening a screen |
 | **Bottom sheets** | Absence reason, quick create | Keeps the person in context |
 | **Pull to refresh, skeleton loading** | Lists | Expected in a modern app; no blank screens |
-| **Team streak** | Coach's home | A light, Strava-style motivator built from attendance statistics (level 2) |
 
-Not proposed: badges, points or leaderboards between children. Open question for the owner: how far to go
+Not included: streaks (dropped by the owner, D-011), badges, points or leaderboards between children. Open question for the owner: how far to go
 with motivation features in an app used by minors.
 
 ## 5. Resources (all free)
