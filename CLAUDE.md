@@ -6,7 +6,11 @@ Rules for AI coding assistants and contributors. Technical Expo rules are in `AG
 
 - The product owner is the founder. He is not a programmer: he decides product, design and business; the
   assistant does the technical work and explains it.
-- Talk to the owner in **Spanish**, in plain language. Give exact commands and say where to run them.
+- Talk to the owner in **Spanish**, in plain language.
+- **The owner does not use the Terminal.** The assistant runs every command itself (git, installs, checks,
+  running the app) and gives the owner a preview to open in the browser. If something truly needs the
+  owner's Mac, Xcode or a physical device, explain exactly what and why, and look first for an alternative
+  with clicks instead of commands.
 - Code, comments, commit messages and documentation are in **English**.
 - The app's interface is English by default with Spanish selectable. No hard-coded interface text once
   translations are set up.
@@ -48,4 +52,4 @@ Rules for AI coding assistants and contributors. Technical Expo rules are in `AG
 
 Run `npm run check` (lint, typecheck, web build) and look at the running app, not only the code. Then tell
 the owner, in Spanish: what changed, which files, which checks ran and their results, what is unverified,
-and what he needs to do.
+and what he needs to do (decisions and clicks, never Terminal commands).
