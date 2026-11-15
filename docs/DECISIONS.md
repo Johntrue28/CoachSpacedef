@@ -29,3 +29,5 @@
 | O-005 | Monthly budget and the store fees (Apple 99 $ per year, Google 25 $ once) | Needed before M6. |
 | O-007 | Which interaction mechanics from `DESIGN.md` §4 go in, and how far to take motivation features with minors | Slide to answer, haptics, countdown: yes. No badges or rankings between children. |
 | O-006 | How guardians and children work in detail (who answers, from what age a child has an account) | Define in M1; design for a digital consent age of 16. |
+| O-008 | Text typeface: Inter (as written in `DESIGN.md`) or Inter Tight (as drawn in Penpot)? | Inter Tight: it is what the owner has seen; update the document once confirmed. |
+| O-009 | Absence reason: a fixed list (school or work, away, other) with no free text? | Yes: quicker to answer and keeps health details out of the app. |

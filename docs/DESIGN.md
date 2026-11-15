@@ -79,7 +79,25 @@ content in every design; design each state (empty, loading, error), not only the
 Not included: streaks (dropped by the owner, D-011), badges, points or leaderboards between children. Open question for the owner: how far to go
 with motivation features in an app used by minors.
 
-## 5. Resources (all free)
+## 5. State of the Penpot file (built, awaiting the owner's review)
+
+Nothing here is approved yet. Screens are built in code only after the owner approves them.
+
+| Page | Contents |
+|---|---|
+| Directions | The three explorations and the first coach home |
+| Components | 23 Phosphor icons; `button` (primary, secondary, inverse); `tag` (solid, accent, outline); `avatar` (dark, light); `answer` (in, out, none); `event-row` (training, match); `member-row`; `tab-bar` (one variant per active tab); `top-bar` (light, dark) |
+| Screens | Phone, 390 x 844. Start: sign in, join team. Coach: home, home (empty), event, attendance, calendar, new event, team, chat, documents, notifications, more. Player: home, event (answer), event (answered), can't come (reason sheet) |
+
+- **Tokens** (Tokens tab, sets `base` and `semantic`): colours, the spacing scale, radius 0, two font families and
+  eleven type styles. Every fill, gap, padding and text style in the new screens is bound to a token.
+- **Not designed yet:** loading and error states; long-name and long-list tests; tablet and desktop layouts;
+  focus states; announcements list; level 2 (squad and line-up, statistics, polls, lifts, tasks).
+- **Proposals drawn for review, not decided:** slide to answer (O-007); absence reason as a fixed list
+  (school or work, away, other) with no free text (O-009).
+- **Mismatch to resolve:** §1 says the text face is Inter; the Penpot file uses Inter Tight (O-008).
+
+## 6. Resources (all free)
 
 | Need | Resource | Notes |
 |---|---|---|
@@ -93,7 +111,7 @@ with motivation features in an app used by minors.
 
 Versions and current APIs must be checked in the official documentation when each is added.
 
-## 6. Sources
+## 7. Sources
 
 - [7 signs a UI has been vibe coded (The Fountain Institute)](https://www.thefountaininstitute.com/blog/signs-vibe-coded-ui)
 - [How to de-slopify your designs (UX Collective)](https://uxdesign.cc/how-to-de-slopify-your-designs-4c40c57c1dc9)
