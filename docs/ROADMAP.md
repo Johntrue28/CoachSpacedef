@@ -9,7 +9,7 @@
 | M1 | **Product definition:** screens, user journeys and permissions for levels 1 and 2 in detail | Approve the definition | Next |
 | M2 | **Design in Penpot:** brand direction, design tokens, 5–6 key screens, then the rest | Penpot account; review and approve | In progress: direction chosen (D-009); tokens, components and 17 phone screens built, awaiting review (see `DESIGN.md` §5) |
 | M3 | **Backend setup:** Supabase development project, data model, access rules with tests, sign-in | Supabase account; approve the data model | Not started |
-| M4 | **Level 1 build:** teams and invitations, events, availability, reminders, attendance, announcements, chat, documents | Run it on the Mac simulator; review each part | Not started |
+| M4 | **Level 1 build:** teams and invitations, events, availability, reminders, attendance, announcements, chat, documents | Run it on the Mac simulator; review each part | Started (D-012): design tokens, fonts, icons, translations, base components and tab navigation; coach home, calendar, event, team, chat and language choice on fictional data. Verified on web only. Nothing is saved or sent yet |
 | M5 | **Level 2 build:** squad and line-up, statistics, polls, lifts, tasks | Review each part | Not started |
 | M6 | **Beta:** TestFlight and Android internal testing with the owner's club; feedback and fixes | Apple and Google developer accounts (paid); approve the release | Not started |
 

@@ -18,6 +18,7 @@
 | D-009 | 2026-11-15 | Visual direction: "Matchday" (black, white, one accent; heavy condensed display type; square corners), with modern interaction mechanics in the spirit of Nike and Strava. Rules in `DESIGN.md`. | "Clubhouse" (warm, rounded); "Scoreboard" (blue, cards) | The owner found it the most developed and the least generic; he asked for little rounding. |
 | D-010 | 2026-11-15 | Design requirements for identity, typography, spacing, components, accessibility, navigation, data, responsive behaviour and quality, as listed in `DESIGN.md` §2. | — | Set by the owner as the standard every screen must meet. |
 | D-011 | 2026-11-15 | No team streak or other streak feature. | A Strava-style team streak on the coach's home; an actionable alert instead | Owner's decision: the reference demo has none. |
+| D-012 | 2026-11-15 | The phone screens drawn in Penpot are accepted as the base, and building the app in Expo starts now, on fictional data, structured so that the look and the data source can be changed later. Work is pushed to GitHub as it goes. | Finish every design and the backend first | Owner's request: see it running early and be able to correct it. Screens not yet designed are still not built. |
 
 ## 2. Open
 
