@@ -17,6 +17,7 @@ This repository is the **new** CoachSpace, rebuilt from scratch. The earlier dem
 | [`AGENTS.md`](AGENTS.md) | Expo-specific technical rules (from the Expo template) |
 | [`docs/PRODUCT.md`](docs/PRODUCT.md) | What CoachSpace is, for whom, and the scope of the first version |
 | [`docs/RESEARCH.md`](docs/RESEARCH.md) | Evidence from clubs and the competitor research |
+| [`docs/DESIGN.md`](docs/DESIGN.md) | Visual direction, design rules and interaction mechanics |
 | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | Technology choices and how the code is organised |
 | [`docs/ROADMAP.md`](docs/ROADMAP.md) | Milestones and what is being worked on now |
 | [`docs/DECISIONS.md`](docs/DECISIONS.md) | Decision log, including open decisions |
